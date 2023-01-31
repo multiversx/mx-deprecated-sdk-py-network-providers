@@ -38,6 +38,7 @@ class ContractResultItem:
         self.gas_price: int = 0
         self.call_type: int = 0
         self.return_message: str = ""
+        self.is_refund: bool = False
         self.logs: TransactionLogs = TransactionLogs()
     
     def to_dictionary(self) -> Dict[str, Any]:
@@ -92,6 +93,7 @@ class ContractResultItem:
         item.data = response.get("data", "")
         item.call_type = response.get("callType", 0)
         item.return_message = response.get("returnMessage", "")
+        item.is_refund = response.get("isRefund", False)
 
         item.logs = TransactionLogs.from_http_response(response.get("logs", {}))
 
