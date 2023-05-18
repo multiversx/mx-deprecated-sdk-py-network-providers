@@ -1,2 +1,2 @@
-requests==2.24.0
-multiversx_sdk_core>=0.3
+requests >= 2.24.0, < 3.0.0dev
+multiversx_sdk_core >= 0.3

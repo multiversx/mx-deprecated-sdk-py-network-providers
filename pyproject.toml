@@ -21,8 +21,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-  "requests==2.24.0",
-  "multiversx-sdk-core>=0.3"
+  "requests >= 2.24.0, < 3.0.0dev",
+  "multiversx-sdk-core >= 0.3"
 ]
 
 [project.urls]
